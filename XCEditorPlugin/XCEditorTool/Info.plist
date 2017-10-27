@@ -36,6 +36,30 @@
 					<key>XCSourceEditorCommandName</key>
 					<string>MakeModel</string>
 				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>LJXCEditorHelper</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).LJXCEditorHelper</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>CheckHeader</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>LJXCEditorHelper</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).CommentCode</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>AddComment</string>
+				</dict>
+				<dict>
+					<key>XCSourceEditorCommandClassName</key>
+					<string>LJXCEditorHelper</string>
+					<key>XCSourceEditorCommandIdentifier</key>
+					<string>$(PRODUCT_BUNDLE_IDENTIFIER).PragmaMark</string>
+					<key>XCSourceEditorCommandName</key>
+					<string>PragmaMark</string>
+				</dict>
 			</array>
 			<key>XCSourceEditorExtensionPrincipalClass</key>
 			<string>SourceEditorExtension</string>

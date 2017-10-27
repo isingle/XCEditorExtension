@@ -34,7 +34,7 @@
     }
     __block NSInteger maxLocation = 0;
     __block NSString *propertyStr = @"";
-    __block NSString *funStr = @"+ (NSDictionary *)JSONKeyPathsByPropertyKey {\n    return @{ ";
+    __block NSString *funStr = @"\n+ (NSDictionary *)JSONKeyPathsByPropertyKey {\n    return @{ ";
     NSMutableArray *propArray = [NSMutableArray arrayWithCapacity:dic.allKeys.count];
     [dic enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
         NSString *type = @"";

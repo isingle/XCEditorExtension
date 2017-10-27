@@ -16,6 +16,7 @@
 		020759981F9BB53C0085B287 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 020759971F9BB53C0085B287 /* SourceEditorExtension.m */; };
 		0207599B1F9BB53C0085B287 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 0207599A1F9BB53C0085B287 /* SourceEditorCommand.m */; };
 		020759A01F9BB53C0085B287 /* XCEditorTool.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 020759911F9BB53C0085B287 /* XCEditorTool.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		02DB6DD71F9F2A3500015945 /* LJXCEditorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 02DB6DD61F9F2A3500015945 /* LJXCEditorHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,8 @@
 		0207599A1F9BB53C0085B287 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
 		0207599C1F9BB53C0085B287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0207599D1F9BB53C0085B287 /* XCEditorTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XCEditorTool.entitlements; sourceTree = "<group>"; };
+		02DB6DD51F9F2A3500015945 /* LJXCEditorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LJXCEditorHelper.h; sourceTree = "<group>"; };
+		02DB6DD61F9F2A3500015945 /* LJXCEditorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LJXCEditorHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				020759971F9BB53C0085B287 /* SourceEditorExtension.m */,
 				020759991F9BB53C0085B287 /* SourceEditorCommand.h */,
 				0207599A1F9BB53C0085B287 /* SourceEditorCommand.m */,
+				02DB6DD51F9F2A3500015945 /* LJXCEditorHelper.h */,
+				02DB6DD61F9F2A3500015945 /* LJXCEditorHelper.m */,
 				0207599C1F9BB53C0085B287 /* Info.plist */,
 				0207599D1F9BB53C0085B287 /* XCEditorTool.entitlements */,
 			);
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				020759981F9BB53C0085B287 /* SourceEditorExtension.m in Sources */,
+				02DB6DD71F9F2A3500015945 /* LJXCEditorHelper.m in Sources */,
 				0207599B1F9BB53C0085B287 /* SourceEditorCommand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -389,9 +395,10 @@
 				DEVELOPMENT_TEAM = 2867UNTJFF;
 				INFOPLIST_FILE = XCEditorPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HLink.XCEditorPlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianjiamacOS.XCEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b77f812a-5505-4493-be66-cc24e8ea86a4";
+				PROVISIONING_PROFILE_SPECIFIER = linkmacOS_Dev;
 			};
 			name = Debug;
 		};
@@ -405,7 +412,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XCEditorPlugin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HLink.XCEditorPlugin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianjiamacOS.XCEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
@@ -420,9 +427,10 @@
 				DEVELOPMENT_TEAM = 2867UNTJFF;
 				INFOPLIST_FILE = XCEditorTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HLink.XCEditorPlugin.XCEditorTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianjiamacOS.XCEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "b77f812a-5505-4493-be66-cc24e8ea86a4";
+				PROVISIONING_PROFILE_SPECIFIER = linkmacOS_Dev;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -436,7 +444,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XCEditorTool/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = HLink.XCEditorPlugin.XCEditorTool;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lianjiamacOS.XCEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
